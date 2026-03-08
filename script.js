@@ -227,6 +227,16 @@ const translations = {
     'hero.cta1':   'See Our Work',
     'hero.cta2':   'Get a Free Quote',
 
+    // Marquee
+    'marquee.design':   'Web Design',
+    'marquee.dev':      'Web Development',
+    'marquee.seo':      'SEO Optimisation',
+    'marquee.landing':  'Landing Pages',
+    'marquee.brand':    'Brand Identity',
+    'marquee.perf':     'Performance Optimisation',
+    'marquee.support':  'Ongoing Support',
+    'marquee.delivery': 'Fast Delivery',
+
     // Index section labels & titles
     'section.services.label': 'What we do',
     'section.services.title': 'Services built to grow your business',
@@ -381,7 +391,7 @@ const translations = {
     'filter.all':     'All',
     'filter.web':     'Web Design',
     'filter.ecom':    'E-Commerce',
-    'filter.seo':     'SEO',
+    'footer.link.seo':     'SEO',
 
     // Work page
     'work.empty.title': 'No projects yet — but yours could be first.',
@@ -596,7 +606,7 @@ const translations = {
     'page.impressum.sub':            'Information pursuant to § 5 TMG (German Telemedia Act)',
     'impressum.h.responsible':       'Responsible party',
     'impressum.h.contact':           'Contact',
-    'impressum.h.vat':               'VAT ID',
+    'impressum.h.vat':               'VAT',
     'impressum.h.profession':        'Professional designation',
     'impressum.h.eu':                'EU Dispute Resolution',
     'impressum.h.consumer':          'Consumer Dispute Resolution',
@@ -620,10 +630,9 @@ const translations = {
     'dsgvo.h9': '9. Updates to this Privacy Policy',
 
     // Impressum body
-    'impressum.p1':  '[First Name Last Name]<br>[Street and House Number]<br>[Postal Code] [City]<br>Germany',
-    'impressum.p2':  'Email: <a href="mailto:[your@email.de]">[your@email.de]</a><br>Phone: [+49 ...]',
-    'impressum.p3a': 'VAT identification number pursuant to § 27a of the German Value Added Tax Act:<br>DE[Your VAT ID]',
-    'impressum.p3b': 'If you operate as a small business owner pursuant to § 19 UStG and do not have a VAT ID, this section does not apply.',
+    'impressum.p1':  'Ebu Bekir Yel<br>Buddestraße 24<br>21109 Hamburg<br>Germany',
+    'impressum.p2':  'Email: <a href="mailto:ee-digital@outlook.com">ee-digital@outlook.com</a>',
+    'impressum.p3a': 'Pursuant to § 19 UStG, no VAT is charged (small business regulation).',
     'impressum.p4':  'Professional designation: Web Designer / Web Developer<br>Awarded in: Germany',
     'impressum.p5a': 'The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>',
     'impressum.p5b': 'Our email address can be found above in the Impressum.',
@@ -678,6 +687,16 @@ const translations = {
     'hero.sub':    'Müşteri çeken, güven inşa eden ve gelir artıran yüksek performanslı web siteleri tasarlıyor ve geliştiriyoruz — 2 haftada teslim.',
     'hero.cta1':   'Çalışmalarımıza Bak',
     'hero.cta2':   'Ücretsiz Teklif Al',
+
+    // Marquee
+    'marquee.design':   'Web Tasarımı',
+    'marquee.dev':      'Web Geliştirme',
+    'marquee.seo':      'SEO Optimizasyonu',
+    'marquee.landing':  'Landing Pages',
+    'marquee.brand':    'Marka Kimliği',
+    'marquee.perf':     'Performans Optimizasyonu',
+    'marquee.support':  'Süregelen Destek',
+    'marquee.delivery': 'Hızlı Teslimat',
 
     // Index section labels & titles
     'section.services.label': 'Ne yapıyoruz',
@@ -833,7 +852,7 @@ const translations = {
     'filter.all':     'Tümü',
     'filter.web':     'Web Tasarım',
     'filter.ecom':    'E-Ticaret',
-    'filter.seo':     'SEO',
+    'footer.link.seo':     'SEO',
 
     // Work page
     'work.empty.title': 'Henüz proje yok — ama sizinki ilk olabilir.',
@@ -1048,7 +1067,7 @@ const translations = {
     'page.impressum.sub':            '§ 5 TMG uyarınca yasal bildirim',
     'impressum.h.responsible':       'Sorumlu taraf',
     'impressum.h.contact':           'İletişim',
-    'impressum.h.vat':               'KDV Kimlik No',
+    'impressum.h.vat':               'KDV',
     'impressum.h.profession':        'Mesleki unvan',
     'impressum.h.eu':                'AB Uyuşmazlık Çözümü',
     'impressum.h.consumer':          'Tüketici Uyuşmazlık Çözümü',
@@ -1072,10 +1091,9 @@ const translations = {
     'dsgvo.h9': '9. Bu Gizlilik Politikasının Güncellenmesi',
 
     // Impressum body
-    'impressum.p1':  '[Ad Soyad]<br>[Sokak ve Bina No]<br>[Posta Kodu] [Şehir]<br>Almanya',
-    'impressum.p2':  'E-posta: <a href="mailto:[email@adresiniz.de]">[email@adresiniz.de]</a><br>Telefon: [+49 ...]',
-    'impressum.p3a': 'Alman Katma Değer Vergisi Kanunu § 27a uyarınca KDV kimlik numarası:<br>DE[KDV No]',
-    'impressum.p3b': '§ 19 UStG uyarınca küçük işletme sahibiyseniz ve KDV numaranız yoksa bu bölüm geçerli değildir.',
+    'impressum.p1':  'Ebu Bekir Yel<br>Buddestraße 24<br>21109 Hamburg<br>Almanya',
+    'impressum.p2':  'E-posta: <a href="mailto:ee-digital@outlook.com">ee-digital@outlook.com</a>',
+    'impressum.p3a': '§ 19 UStG uyarınca küçük işletme düzenlemesi kapsamında KDV alınmamaktadır.',
     'impressum.p4':  'Mesleki unvan: Web Tasarımcı / Web Geliştiricisi<br>Veriliş yeri: Almanya',
     'impressum.p5a': 'Avrupa Komisyonu, çevrimiçi uyuşmazlık çözümü (ODR) için bir platform sunmaktadır: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>',
     'impressum.p5b': 'E-posta adresimiz yukarıdaki Impressum bölümünde yer almaktadır.',
@@ -1130,6 +1148,16 @@ const translations = {
     'hero.sub':    'Wir gestalten und entwickeln leistungsstarke Websites, die Kunden gewinnen, Vertrauen aufbauen und Umsatz steigern — in 2 Wochen geliefert.',
     'hero.cta1':   'Unsere Projekte',
     'hero.cta2':   'Kostenloses Angebot',
+
+    // Marquee
+    'marquee.design':   'Webdesign',
+    'marquee.dev':      'Webentwicklung',
+    'marquee.seo':      'SEO-Optimierung',
+    'marquee.landing':  'Landingpages',
+    'marquee.brand':    'Markenidentität',
+    'marquee.perf':     'Performance-Optimierung',
+    'marquee.support':  'Laufender Support',
+    'marquee.delivery': 'Schnelle Lieferung',
 
     // Index section labels & titles
     'section.services.label': 'Was wir tun',
@@ -1285,7 +1313,7 @@ const translations = {
     'filter.all':     'Alle',
     'filter.web':     'Webdesign',
     'filter.ecom':    'E-Commerce',
-    'filter.seo':     'SEO',
+    'footer.link.seo':     'SEO',
 
     // Work page
     'work.empty.title': 'Noch keine Projekte — aber Ihres könnte das erste sein.',
@@ -1500,7 +1528,7 @@ const translations = {
     'page.impressum.sub':            'Angaben gemäß § 5 TMG',
     'impressum.h.responsible':       'Verantwortlich für den Inhalt',
     'impressum.h.contact':           'Kontakt',
-    'impressum.h.vat':               'Umsatzsteuer-ID',
+    'impressum.h.vat':               'Umsatzsteuer',
     'impressum.h.profession':        'Berufsbezeichnung und berufsrechtliche Regelungen',
     'impressum.h.eu':                'EU-Streitschlichtung',
     'impressum.h.consumer':          'Verbraucherschlichtung',
@@ -1524,10 +1552,9 @@ const translations = {
     'dsgvo.h9': '9. Aktualität und Änderung dieser Datenschutzerklärung',
 
     // Impressum body
-    'impressum.p1':  '[Vorname Nachname]<br>[Straße und Hausnummer]<br>[PLZ] [Stadt]<br>Deutschland',
-    'impressum.p2':  'E-Mail: <a href="mailto:[ihre@email.de]">[ihre@email.de]</a><br>Telefon: [+49 ...]',
-    'impressum.p3a': 'Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br>DE[Ihre USt-IdNr.]',
-    'impressum.p3b': 'Falls Sie als Kleinunternehmer gemäß § 19 UStG tätig sind und keine USt-ID besitzen, entfällt dieser Abschnitt.',
+    'impressum.p1':  'Ebu Bekir Yel<br>Buddestraße 24<br>21109 Hamburg<br>Deutschland',
+    'impressum.p2':  'E-Mail: <a href="mailto:ee-digital@outlook.com">ee-digital@outlook.com</a>',
+    'impressum.p3a': 'Gemäß § 19 UStG wird keine Umsatzsteuer erhoben (Kleinunternehmerregelung).',
     'impressum.p4':  'Berufsbezeichnung: Webdesigner / Webentwickler<br>Verliehen in: Deutschland',
     'impressum.p5a': 'Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>',
     'impressum.p5b': 'Unsere E-Mail-Adresse finden Sie oben im Impressum.',
@@ -1596,9 +1623,18 @@ function applyLang(lang) {
     if (text !== undefined) el.setAttribute('content', text);
   });
 
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+
   localStorage.setItem('lang', lang);
   document.documentElement.setAttribute('lang', lang);
 }
+
+// Language switch buttons
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+});
 
 // Init language on page load
 applyLang(currentLang);
