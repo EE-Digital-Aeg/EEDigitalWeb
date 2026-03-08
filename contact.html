@@ -138,17 +138,17 @@
             <div class="form__row">
               <div class="form__group">
                 <label for="name" data-i18n="form.name">Your name</label>
-                <input type="text" id="name" name="name" placeholder="John Smith" required />
+                <input type="text" id="name" name="name" placeholder="John Smith" data-i18n="form.name.ph" required />
               </div>
               <div class="form__group">
                 <label for="email" data-i18n="form.email">Email address</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                <input type="email" id="email" name="email" placeholder="john@example.com" data-i18n="form.email.ph" required />
               </div>
             </div>
             <div class="form__row">
               <div class="form__group">
                 <label for="phone" data-i18n="form.phone">Phone (optional)</label>
-                <input type="tel" id="phone" name="phone" placeholder="+44 7700 000000" />
+                <input type="tel" id="phone" name="phone" placeholder="+44 7700 000000" data-i18n="form.phone.ph" />
               </div>
               <div class="form__group">
                 <label for="budget" data-i18n="form.budget">Approximate budget</label>
@@ -176,7 +176,7 @@
             </div>
             <div class="form__group">
               <label for="message" data-i18n="form.message">Tell us about your project</label>
-              <textarea id="message" name="message" rows="5" placeholder="Describe your project, goals, timeline, and any specific requirements..." required></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="Describe your project, goals, timeline, and any specific requirements..." data-i18n="form.message.ph" required></textarea>
             </div>
             <button type="submit" class="btn btn--primary btn--full" data-i18n="form.submit">Send Message</button>
             <div class="form__success" id="formSuccess" data-i18n="form.success">

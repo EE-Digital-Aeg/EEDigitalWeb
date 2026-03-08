@@ -54,13 +54,23 @@ if (form) form.addEventListener('submit', async (e) => {
   const email = form.email.value.trim();
   const message = form.message.value.trim();
 
+  const btn = form.querySelector('button[type="submit"]');
+  const formError = document.getElementById('formError');
+
   if (!name || !email || !message) {
     highlightEmpty(form);
+    formError.textContent = translations[currentLang]?.['form.validation.required'] || 'Please fill in all required fields.';
+    formError.classList.add('show');
     return;
   }
 
-  const btn = form.querySelector('button[type="submit"]');
-  const formError = document.getElementById('formError');
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    form.email.style.borderColor = '#ef4444';
+    form.email.addEventListener('input', () => { form.email.style.borderColor = ''; formError.classList.remove('show'); }, { once: true });
+    formError.textContent = translations[currentLang]?.['form.validation.email'] || 'Please enter a valid email address.';
+    formError.classList.add('show');
+    return;
+  }
   btn.textContent = translations[currentLang]?.['form.sending'] || 'Sending...';
   btn.disabled = true;
   formError.classList.remove('show');
@@ -346,6 +356,12 @@ const translations = {
     'form.service.opt4': 'SEO Optimisation',
     'form.service.opt5': 'Ongoing Support',
     'form.service.opt6': 'Other / Not Sure',
+    'form.validation.required': 'Please fill in all required fields.',
+    'form.validation.email':    'Please enter a valid email address.',
+    'form.name.ph':    'John Smith',
+    'form.email.ph':   'john@example.com',
+    'form.phone.ph':   '+44 7700 000000',
+    'form.message.ph': 'Describe your project, goals, timeline, and any specific requirements...',
 
     // Filter buttons
     'filter.all':     'All',
@@ -778,6 +794,12 @@ const translations = {
     'form.service.opt4': 'SEO Optimizasyonu',
     'form.service.opt5': 'Süregelen Destek',
     'form.service.opt6': 'Diğer / Emin Değilim',
+    'form.validation.required': 'Lütfen tüm zorunlu alanları doldurun.',
+    'form.validation.email':    'Lütfen geçerli bir e-posta adresi girin.',
+    'form.name.ph':    'Ad Soyad',
+    'form.email.ph':   'ornek@email.com',
+    'form.phone.ph':   '+90 / +49 ...',
+    'form.message.ph': 'Projenizi, hedeflerinizi, zaman çizelgenizi ve özel gereksinimlerinizi açıklayın...',
 
     // Filter buttons
     'filter.all':     'Tümü',
@@ -1210,6 +1232,12 @@ const translations = {
     'form.service.opt4': 'SEO-Optimierung',
     'form.service.opt5': 'Laufender Support',
     'form.service.opt6': 'Sonstiges / Nicht sicher',
+    'form.validation.required': 'Bitte füllen Sie alle Pflichtfelder aus.',
+    'form.validation.email':    'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+    'form.name.ph':    'Max Mustermann',
+    'form.email.ph':   'max@beispiel.de',
+    'form.phone.ph':   '+49 ...',
+    'form.message.ph': 'Beschreiben Sie Ihr Projekt, Ihre Ziele, den Zeitplan und besondere Anforderungen...',
 
     // Filter buttons
     'filter.all':     'Alle',
