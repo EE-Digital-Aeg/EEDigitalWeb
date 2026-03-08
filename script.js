@@ -300,6 +300,20 @@ const translations = {
     'page.pricing.doctitle':  'Pricing — E&E Digital',
     'page.contact.doctitle':  'Contact — E&E Digital',
 
+    // OG / Twitter meta
+    'meta.index.title':    'E&E Digital — Web Design & Development Agency',
+    'meta.index.desc':     'E&E Digital builds modern, high-performance websites for growing businesses. Custom web design, development, and SEO.',
+    'meta.services.title': 'Services — E&E Digital',
+    'meta.services.desc':  'From web design and development to SEO and landing pages — E&E Digital offers everything your business needs to succeed online.',
+    'meta.work.title':     'Our Work — E&E Digital',
+    'meta.work.desc':      "We're building our portfolio — and we'd love for your brand to be the one we showcase first.",
+    'meta.about.title':    'About — E&E Digital',
+    'meta.about.desc':     'Learn about E&E Digital — a web design and development agency focused on building websites that grow businesses.',
+    'meta.pricing.title':  'Pricing — E&E Digital',
+    'meta.pricing.desc':   'Simple, transparent pricing for web design and development. Choose a package that fits your business — no hidden fees.',
+    'meta.contact.title':  'Contact — E&E Digital',
+    'meta.contact.desc':   "Get in touch with E&E Digital. Tell us about your project and we'll get back to you within 24 hours with a free quote.",
+
     // Page heroes
     'page.services.label': 'What we offer',
     'page.services.title': 'Everything you need to grow online',
@@ -737,6 +751,20 @@ const translations = {
     'page.about.doctitle':    'Hakkımızda — E&E Digital',
     'page.pricing.doctitle':  'Fiyatlar — E&E Digital',
     'page.contact.doctitle':  'İletişim — E&E Digital',
+
+    // OG / Twitter meta
+    'meta.index.title':    'E&E Digital — Web Tasarım & Geliştirme Ajansı',
+    'meta.index.desc':     'E&E Digital, büyüyen işletmeler için modern, yüksek performanslı web siteleri kurar. Özel web tasarımı, geliştirme ve SEO.',
+    'meta.services.title': 'Hizmetler — E&E Digital',
+    'meta.services.desc':  'Web tasarımından geliştirmeye, SEO\'dan landing page\'lere — E&E Digital, işletmenizin çevrimiçi başarısı için ihtiyaç duyduğu her şeyi sunar.',
+    'meta.work.title':     'Çalışmalarımız — E&E Digital',
+    'meta.work.desc':      'Portföyümüzü oluşturuyoruz — ve markanızın vitrinimizde öne çıkan ilk proje olmasını çok isteriz.',
+    'meta.about.title':    'Hakkımızda — E&E Digital',
+    'meta.about.desc':     'E&E Digital hakkında bilgi edinin — işletmeleri büyüten web siteleri oluşturmaya odaklanmış bir web tasarım ve geliştirme ajansı.',
+    'meta.pricing.title':  'Fiyatlar — E&E Digital',
+    'meta.pricing.desc':   'Web tasarımı ve geliştirme için sade, şeffaf fiyatlandırma. İşletmenize uygun paketi seçin — gizli ücret yok.',
+    'meta.contact.title':  'İletişim — E&E Digital',
+    'meta.contact.desc':   'E&E Digital ile iletişime geçin. Projenizi anlatın, 24 saat içinde ücretsiz teklifle geri dönelim.',
 
     // Page heroes
     'page.services.label': 'Ne sunuyoruz',
@@ -1176,6 +1204,20 @@ const translations = {
     'page.pricing.doctitle':  'Preise — E&E Digital',
     'page.contact.doctitle':  'Kontakt — E&E Digital',
 
+    // OG / Twitter meta
+    'meta.index.title':    'E&E Digital — Webdesign & Entwicklungsagentur',
+    'meta.index.desc':     'E&E Digital erstellt moderne, leistungsstarke Webseiten für wachsende Unternehmen. Individuelles Webdesign, Entwicklung und SEO.',
+    'meta.services.title': 'Leistungen — E&E Digital',
+    'meta.services.desc':  'Von Webdesign und Entwicklung bis SEO und Landingpages — E&E Digital bietet alles, was Ihr Unternehmen für den Erfolg im Netz braucht.',
+    'meta.work.title':     'Unsere Projekte — E&E Digital',
+    'meta.work.desc':      'Wir bauen unser Portfolio auf — und würden uns freuen, wenn Ihre Marke das erste Aushängeschild wäre.',
+    'meta.about.title':    'Über uns — E&E Digital',
+    'meta.about.desc':     'Erfahren Sie mehr über E&E Digital — eine Webdesign- und Entwicklungsagentur, die sich auf Webseiten für wachsende Unternehmen spezialisiert hat.',
+    'meta.pricing.title':  'Preise — E&E Digital',
+    'meta.pricing.desc':   'Klare, transparente Preise für Webdesign und Entwicklung. Wählen Sie das Paket, das zu Ihrem Unternehmen passt — keine versteckten Kosten.',
+    'meta.contact.title':  'Kontakt — E&E Digital',
+    'meta.contact.desc':   'Kontaktieren Sie E&E Digital. Erzählen Sie uns von Ihrem Projekt und wir melden uns innerhalb von 24 Stunden mit einem kostenlosen Angebot.',
+
     // Page heroes
     'page.services.label': 'Was wir anbieten',
     'page.services.title': 'Alles, was Sie für Ihr Online-Wachstum brauchen',
@@ -1546,6 +1588,12 @@ function applyLang(lang) {
     } else {
       el.textContent = text;
     }
+  });
+
+  document.querySelectorAll('[data-i18n-content]').forEach(el => {
+    const key = el.dataset.i18nContent;
+    const text = translations[lang]?.[key];
+    if (text !== undefined) el.setAttribute('content', text);
   });
 
   localStorage.setItem('lang', lang);

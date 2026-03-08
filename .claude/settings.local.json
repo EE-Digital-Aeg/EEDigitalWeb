@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(tail -20 \"/Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\(Claude\\)/script.js\")",
-      "Bash(grep -n \"<title>\" /Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\\\\\(Claude\\\\\\)/*.html)"
+      "Bash(grep -n \"<title>\" /Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\\\\\(Claude\\\\\\)/*.html)",
+      "Bash(ls /Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\\\\\(Claude\\\\\\)/sitemap.xml)",
+      "Bash(ls /Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\\\\\(Claude\\\\\\)/robots.txt)",
+      "Bash(ls /Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\\\\\(Claude\\\\\\)/fonts/)",
+      "Bash(ls /Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\\\\\(Claude\\\\\\)/*.woff2)"
     ]
   }
 }
