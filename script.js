@@ -219,27 +219,66 @@ const translations = {
 
     // Index section labels & titles
     'section.services.label': 'What we do',
-    'section.services.title': 'Services built for growth',
-    'section.services.cta':   'See all services →',
+    'section.services.title': 'Services built to grow your business',
+    'section.services.cta':   'Explore All Services →',
     'section.work.label':     'Our work',
     'section.work.title':     'Projects we\'re proud of',
     'section.work.cta':       'View full portfolio →',
     'section.process.label':  'How it works',
-    'section.process.title':  'Simple. Clear. Fast.',
     'section.testi.label':    'Testimonials',
     'section.testi.title':    'What our clients say',
 
-    // CTA banner
-    'cta.title': 'Ready to start your project?',
-    'cta.sub':   'Get a free consultation and quote within 24 hours.',
-    'cta.btn':   'Get a Free Quote',
+    // Index page — hero stats
+    'hero.stat1':       'Avg. Delivery Time',
+    'hero.stat2.num':   'Free',
+    'hero.stat2.label': 'Discovery Call',
+    'hero.stat3':       'Focused on Your Project',
+
+    // Index page — service cards
+    'index.svc1.title': 'Website Design',
+    'index.svc1.text':  'Pixel-perfect, modern designs tailored to your brand that captivate visitors and drive conversions.',
+    'index.svc2.title': 'Web Development',
+    'index.svc2.text':  'Clean, fast, and scalable code. We build websites that load quickly, rank well, and work on every device.',
+    'index.svc3.title': 'Landing Pages',
+    'index.svc3.text':  'High-converting landing pages built for a single goal — capturing leads, launching a product, or driving sign-ups.',
+
+    // Index page — portfolio empty state
+    'index.portfolio.label': 'Portfolio',
+    'index.portfolio.title': 'Your project could be first here.',
+    'index.portfolio.sub':   'We\'re just getting started — and that\'s good news for you. You\'ll get our full attention, our best work, and launch pricing.',
+    'index.portfolio.cta':   'Start a Project →',
+
+    // Index page — process section
+    'index.process.title':  'Simple process, great results',
+    'process.step1.title':  'Discovery Call',
+    'process.step1.text':   'We learn about your business, goals, and audience so we can build the right solution for you.',
+    'process.step2.title':  'Design & Build',
+    'process.step2.text':   'We design and develop your site, keeping you in the loop with regular updates.',
+    'process.step3.title':  'Review & Refine',
+    'process.step3.text':   'You review the site and we make revisions until it\'s exactly right. No hidden fees.',
+    'process.step4.title':  'Launch & Support',
+    'process.step4.text':   'We launch your site and provide ongoing support to make sure everything runs smoothly.',
+
+    // First client CTA
+    'fc.title': 'Be our first five-star client.',
+    'fc.sub':   'We\'re a new agency with big ambitions. Work with us now and get our undivided attention, launch-day pricing, and a website we\'ll both be proud to show the world.',
+
+    // CTA banner (index)
+    'cta.title': 'Ready to get started?',
+    'cta.sub':   'Let\'s build a website that works as hard as you do.',
+    'cta.btn':   'Start Your Project',
 
     // Footer
-    'footer.tagline':  'Modern websites for growing businesses.',
-    'footer.services': 'Services',
-    'footer.company':  'Company',
-    'footer.rights':   '© 2026 E&E Digital. All rights reserved.',
-    'footer.built':    'Built with care.',
+    'footer.tagline':       'Modern websites for growing businesses.',
+    'footer.services':      'Services',
+    'footer.company':       'Company',
+    'footer.rights':        '© 2026 E&E Digital. All rights reserved.',
+    'footer.built':         'Built with care.',
+    'footer.link.design':   'Web Design',
+    'footer.link.dev':      'Web Development',
+    'footer.link.support':  'Ongoing Support',
+    'footer.link.portfolio':'Portfolio',
+    'footer.link.contact':  'Contact',
 
     // Page heroes
     'page.services.label': 'What we offer',
@@ -309,27 +348,66 @@ const translations = {
 
     // Index section labels & titles
     'section.services.label': 'Ne yapıyoruz',
-    'section.services.title': 'Büyüme için hizmetler',
-    'section.services.cta':   'Tüm hizmetleri gör →',
+    'section.services.title': 'İşinizi büyütecek hizmetler',
+    'section.services.cta':   'Tüm Hizmetleri Keşfet →',
     'section.work.label':     'Çalışmalarımız',
     'section.work.title':     'Gurur duyduğumuz projeler',
     'section.work.cta':       'Tüm portföyü gör →',
     'section.process.label':  'Nasıl çalışıyoruz',
-    'section.process.title':  'Basit. Net. Hızlı.',
     'section.testi.label':    'Referanslar',
     'section.testi.title':    'Müşterilerimiz ne diyor',
 
-    // CTA banner
-    'cta.title': 'Projenize başlamaya hazır mısınız?',
-    'cta.sub':   '24 saat içinde ücretsiz danışmanlık ve teklif alın.',
-    'cta.btn':   'Ücretsiz Teklif Al',
+    // Index page — hero stats
+    'hero.stat1':       'Ort. Teslimat Süresi',
+    'hero.stat2.num':   'Ücretsiz',
+    'hero.stat2.label': 'Keşif Görüşmesi',
+    'hero.stat3':       'Projenize Odaklanmış',
+
+    // Index page — service cards
+    'index.svc1.title': 'Website Tasarımı',
+    'index.svc1.text':  'Markanıza özel piksel mükemmel, modern tasarımlar. Ziyaretçileri büyüler ve dönüşümleri artırır.',
+    'index.svc2.title': 'Web Geliştirme',
+    'index.svc2.text':  'Temiz, hızlı ve ölçeklenebilir kod. Her cihazda çalışan, hızlı yüklenen ve iyi sıralanan siteler inşa ediyoruz.',
+    'index.svc3.title': 'Açılış Sayfaları',
+    'index.svc3.text':  'Tek bir hedefe yönelik yüksek dönüşümlü açılış sayfaları — lead toplamak, ürün lansmanı veya kayıt artırmak.',
+
+    // Index page — portfolio empty state
+    'index.portfolio.label': 'Portföy',
+    'index.portfolio.title': 'Projeniz burada ilk olabilir.',
+    'index.portfolio.sub':   'Yeni başlıyoruz — ve bu sizin için iyi bir haber. Tam dikkatimizi, en iyi çalışmamızı ve lansman fiyatını alacaksınız.',
+    'index.portfolio.cta':   'Proje Başlat →',
+
+    // Index page — process section
+    'index.process.title':  'Basit süreç, harika sonuçlar',
+    'process.step1.title':  'Keşif Görüşmesi',
+    'process.step1.text':   'Doğru çözümü inşa edebilmek için işinizi, hedeflerinizi ve kitlenizi öğreniyoruz.',
+    'process.step2.title':  'Tasarım & Geliştirme',
+    'process.step2.text':   'Sitenizi tasarlayıp geliştiriyoruz, düzenli güncellemelerle sizi her adımda bilgilendiriyoruz.',
+    'process.step3.title':  'İnceleme & Revizyon',
+    'process.step3.text':   'Siteyi inceliyorsunuz, her şey tam olana kadar revizyonlar yapıyoruz. Gizli ücret yok.',
+    'process.step4.title':  'Yayın & Destek',
+    'process.step4.text':   'Sitenizi yayına alıyor ve her şeyin sorunsuz çalışması için sürekli destek sağlıyoruz.',
+
+    // First client CTA
+    'fc.title': 'İlk beş yıldızlı müşterimiz olun.',
+    'fc.sub':   'Büyük hırslarla dolu yeni bir ajansız. Şimdi birlikte çalışın ve tam dikkatimizi, lansman fiyatını ve dünyaya göstereceğiniz bir web sitesini elde edin.',
+
+    // CTA banner (index)
+    'cta.title': 'Başlamaya hazır mısınız?',
+    'cta.sub':   'Sizin kadar sıkı çalışan bir website inşa edelim.',
+    'cta.btn':   'Projenizi Başlatın',
 
     // Footer
-    'footer.tagline':  'Büyüyen işletmeler için modern web siteleri.',
-    'footer.services': 'Hizmetler',
-    'footer.company':  'Şirket',
-    'footer.rights':   '© 2026 E&E Digital. Tüm hakları saklıdır.',
-    'footer.built':    'Özenle inşa edildi.',
+    'footer.tagline':       'Büyüyen işletmeler için modern web siteleri.',
+    'footer.services':      'Hizmetler',
+    'footer.company':       'Şirket',
+    'footer.rights':        '© 2026 E&E Digital. Tüm hakları saklıdır.',
+    'footer.built':         'Özenle inşa edildi.',
+    'footer.link.design':   'Web Tasarım',
+    'footer.link.dev':      'Web Geliştirme',
+    'footer.link.support':  'Sürekli Destek',
+    'footer.link.portfolio':'Portföy',
+    'footer.link.contact':  'İletişim',
 
     // Page heroes
     'page.services.label': 'Ne sunuyoruz',
@@ -400,26 +478,65 @@ const translations = {
     // Index section labels & titles
     'section.services.label': 'Was wir tun',
     'section.services.title': 'Leistungen für Ihr Wachstum',
-    'section.services.cta':   'Alle Leistungen →',
+    'section.services.cta':   'Alle Leistungen erkunden →',
     'section.work.label':     'Unsere Arbeit',
     'section.work.title':     'Projekte, auf die wir stolz sind',
     'section.work.cta':       'Gesamtes Portfolio →',
     'section.process.label':  'So funktioniert es',
-    'section.process.title':  'Einfach. Klar. Schnell.',
     'section.testi.label':    'Referenzen',
     'section.testi.title':    'Was unsere Kunden sagen',
 
-    // CTA banner
-    'cta.title': 'Bereit, Ihr Projekt zu starten?',
-    'cta.sub':   'Kostenloses Beratungsgespräch und Angebot innerhalb von 24 Stunden.',
-    'cta.btn':   'Kostenloses Angebot',
+    // Index page — hero stats
+    'hero.stat1':       'Ø Lieferzeit',
+    'hero.stat2.num':   'Kostenlos',
+    'hero.stat2.label': 'Erstgespräch',
+    'hero.stat3':       'Fokussiert auf Ihr Projekt',
+
+    // Index page — service cards
+    'index.svc1.title': 'Webdesign',
+    'index.svc1.text':  'Pixelgenaue, moderne Designs, die zu Ihrer Marke passen, Besucher fesseln und Conversions steigern.',
+    'index.svc2.title': 'Webentwicklung',
+    'index.svc2.text':  'Sauberer, schneller und skalierbarer Code. Wir bauen Websites, die schnell laden, gut ranken und auf jedem Gerät funktionieren.',
+    'index.svc3.title': 'Landingpages',
+    'index.svc3.text':  'Hochkonvertierende Landingpages für ein einziges Ziel — Leads generieren, Produkte launchen oder Anmeldungen steigern.',
+
+    // Index page — portfolio empty state
+    'index.portfolio.label': 'Portfolio',
+    'index.portfolio.title': 'Ihr Projekt könnte hier das erste sein.',
+    'index.portfolio.sub':   'Wir fangen gerade erst an — und das ist eine gute Nachricht für Sie. Sie bekommen unsere volle Aufmerksamkeit, unsere beste Arbeit und Einführungspreise.',
+    'index.portfolio.cta':   'Projekt starten →',
+
+    // Index page — process section
+    'index.process.title':  'Einfacher Prozess, tolle Ergebnisse',
+    'process.step1.title':  'Erstgespräch',
+    'process.step1.text':   'Wir lernen Ihr Unternehmen, Ihre Ziele und Ihre Zielgruppe kennen, um die richtige Lösung für Sie zu entwickeln.',
+    'process.step2.title':  'Design & Entwicklung',
+    'process.step2.text':   'Wir gestalten und entwickeln Ihre Website und halten Sie mit regelmäßigen Updates auf dem Laufenden.',
+    'process.step3.title':  'Überprüfung & Optimierung',
+    'process.step3.text':   'Sie begutachten die Website, wir machen Revisionen bis alles perfekt ist. Keine versteckten Kosten.',
+    'process.step4.title':  'Launch & Support',
+    'process.step4.text':   'Wir launchen Ihre Website und bieten fortlaufenden Support, damit alles reibungslos läuft.',
+
+    // First client CTA
+    'fc.title': 'Werden Sie unser erster Fünf-Sterne-Kunde.',
+    'fc.sub':   'Wir sind eine neue Agentur mit großen Ambitionen. Arbeiten Sie jetzt mit uns und erhalten Sie unsere volle Aufmerksamkeit, Einführungspreise und eine Website, auf die wir beide stolz sein werden.',
+
+    // CTA banner (index)
+    'cta.title': 'Bereit loszulegen?',
+    'cta.sub':   'Lassen Sie uns eine Website entwickeln, die so hart arbeitet wie Sie.',
+    'cta.btn':   'Projekt starten',
 
     // Footer
-    'footer.tagline':  'Moderne Websites für wachsende Unternehmen.',
-    'footer.services': 'Leistungen',
-    'footer.company':  'Unternehmen',
-    'footer.rights':   '© 2026 E&E Digital. Alle Rechte vorbehalten.',
-    'footer.built':    'Mit Sorgfalt entwickelt.',
+    'footer.tagline':       'Moderne Websites für wachsende Unternehmen.',
+    'footer.services':      'Leistungen',
+    'footer.company':       'Unternehmen',
+    'footer.rights':        '© 2026 E&E Digital. Alle Rechte vorbehalten.',
+    'footer.built':         'Mit Sorgfalt entwickelt.',
+    'footer.link.design':   'Webdesign',
+    'footer.link.dev':      'Webentwicklung',
+    'footer.link.support':  'Laufender Support',
+    'footer.link.portfolio':'Portfolio',
+    'footer.link.contact':  'Kontakt',
 
     // Page heroes
     'page.services.label': 'Was wir anbieten',
