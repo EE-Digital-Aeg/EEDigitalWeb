@@ -282,6 +282,14 @@ const translations = {
     'footer.link.impressum':  'Imprint',
     'footer.link.datenschutz':'Privacy Policy',
 
+    // Page titles
+    'page.index.doctitle':    'E&E Digital — Web Design & Development Agency',
+    'page.services.doctitle': 'Services — E&E Digital',
+    'page.work.doctitle':     'Our Work — E&E Digital',
+    'page.about.doctitle':    'About — E&E Digital',
+    'page.pricing.doctitle':  'Pricing — E&E Digital',
+    'page.contact.doctitle':  'Contact — E&E Digital',
+
     // Page heroes
     'page.services.label': 'What we offer',
     'page.services.title': 'Everything you need to grow online',
@@ -325,6 +333,19 @@ const translations = {
     'form.sending': 'Sending...',
     'form.success': 'Thanks! We\'ll be in touch within 24 hours.',
     'form.error':   'Something went wrong. Please email us directly at hello@eedigital.com.',
+    'form.budget.placeholder': 'Select a range...',
+    'form.budget.opt1': 'Under £1,000',
+    'form.budget.opt2': '£1,000 – £2,500',
+    'form.budget.opt3': '£2,500 – £5,000',
+    'form.budget.opt4': '£5,000+',
+    'form.budget.opt5': 'Not sure yet',
+    'form.service.placeholder': 'Select a service...',
+    'form.service.opt1': 'Website Design',
+    'form.service.opt2': 'Web Development',
+    'form.service.opt3': 'Landing Page',
+    'form.service.opt4': 'SEO Optimisation',
+    'form.service.opt5': 'Ongoing Support',
+    'form.service.opt6': 'Other / Not Sure',
 
     // Filter buttons
     'filter.all':     'All',
@@ -693,6 +714,14 @@ const translations = {
     'footer.link.impressum':  'Künye',
     'footer.link.datenschutz':'Gizlilik Politikası',
 
+    // Page titles
+    'page.index.doctitle':    'E&E Digital — Web Tasarım & Geliştirme Ajansı',
+    'page.services.doctitle': 'Hizmetler — E&E Digital',
+    'page.work.doctitle':     'Çalışmalarımız — E&E Digital',
+    'page.about.doctitle':    'Hakkımızda — E&E Digital',
+    'page.pricing.doctitle':  'Fiyatlar — E&E Digital',
+    'page.contact.doctitle':  'İletişim — E&E Digital',
+
     // Page heroes
     'page.services.label': 'Ne sunuyoruz',
     'page.services.title': 'Online büyümek için ihtiyacınız olan her şey',
@@ -736,6 +765,19 @@ const translations = {
     'form.sending': 'Gönderiliyor...',
     'form.success': 'Teşekkürler! 24 saat içinde sizinle iletişime geçeceğiz.',
     'form.error':   'Bir şeyler ters gitti. Lütfen bize doğrudan e-posta gönderin: hello@eedigital.com.',
+    'form.budget.placeholder': 'Bir aralık seçin...',
+    'form.budget.opt1': '£1.000 altı',
+    'form.budget.opt2': '£1.000 – £2.500',
+    'form.budget.opt3': '£2.500 – £5.000',
+    'form.budget.opt4': '£5.000+',
+    'form.budget.opt5': 'Henüz emin değilim',
+    'form.service.placeholder': 'Bir hizmet seçin...',
+    'form.service.opt1': 'Web Tasarımı',
+    'form.service.opt2': 'Web Geliştirme',
+    'form.service.opt3': 'Açılış Sayfası',
+    'form.service.opt4': 'SEO Optimizasyonu',
+    'form.service.opt5': 'Süregelen Destek',
+    'form.service.opt6': 'Diğer / Emin Değilim',
 
     // Filter buttons
     'filter.all':     'Tümü',
@@ -1104,6 +1146,14 @@ const translations = {
     'footer.link.impressum':  'Impressum',
     'footer.link.datenschutz':'Datenschutz',
 
+    // Page titles
+    'page.index.doctitle':    'E&E Digital — Webdesign & Entwicklungsagentur',
+    'page.services.doctitle': 'Leistungen — E&E Digital',
+    'page.work.doctitle':     'Unsere Projekte — E&E Digital',
+    'page.about.doctitle':    'Über uns — E&E Digital',
+    'page.pricing.doctitle':  'Preise — E&E Digital',
+    'page.contact.doctitle':  'Kontakt — E&E Digital',
+
     // Page heroes
     'page.services.label': 'Was wir anbieten',
     'page.services.title': 'Alles, was Sie für Ihr Online-Wachstum brauchen',
@@ -1147,6 +1197,19 @@ const translations = {
     'form.sending': 'Wird gesendet...',
     'form.success': 'Danke! Wir melden uns innerhalb von 24 Stunden.',
     'form.error':   'Etwas ist schiefgelaufen. Bitte schreiben Sie uns direkt: hello@eedigital.com.',
+    'form.budget.placeholder': 'Bereich auswählen...',
+    'form.budget.opt1': 'Unter 1.000 £',
+    'form.budget.opt2': '1.000 £ – 2.500 £',
+    'form.budget.opt3': '2.500 £ – 5.000 £',
+    'form.budget.opt4': '5.000 £+',
+    'form.budget.opt5': 'Noch nicht sicher',
+    'form.service.placeholder': 'Leistung auswählen...',
+    'form.service.opt1': 'Website Design',
+    'form.service.opt2': 'Web-Entwicklung',
+    'form.service.opt3': 'Landing Page',
+    'form.service.opt4': 'SEO-Optimierung',
+    'form.service.opt5': 'Laufender Support',
+    'form.service.opt6': 'Sonstiges / Nicht sicher',
 
     // Filter buttons
     'filter.all':     'Alle',

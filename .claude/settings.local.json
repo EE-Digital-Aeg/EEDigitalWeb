@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(tail -20 \"/Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\(Claude\\)/script.js\")"
+      "Bash(tail -20 \"/Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\(Claude\\)/script.js\")",
+      "Bash(grep -n \"<title>\" /Users/ebubekiryel/Documents/Developer/EEDigitalWeb\\\\\\(Claude\\\\\\)/*.html)"
     ]
   }
 }
