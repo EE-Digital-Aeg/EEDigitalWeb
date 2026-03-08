@@ -69,9 +69,9 @@
 
         <div class="contact__content">
           <div class="contact__card">
-            <p class="section__label">Contact details</p>
-            <h2 class="contact__heading">We'd love to<br>hear from you.</h2>
-            <p class="contact__text">Not ready for a form? Drop us an email — we're happy to chat about your project, no strings attached.</p>
+            <p class="section__label" data-i18n="contact.card.heading">Contact details</p>
+            <h2 class="contact__heading" data-i18n="contact.card.text">We'd love to hear from you.</h2>
+            <p class="contact__text" data-i18n="contact.card.sub">Not ready for a form? Drop us an email — we're happy to chat about your project, no strings attached.</p>
 
             <div class="contact__info">
               <a href="mailto:hello@eedigital.com" class="contact__item">
@@ -79,7 +79,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </div>
                 <div class="contact__item-text">
-                  <span class="contact__item-label">Email us</span>
+                  <span class="contact__item-label" data-i18n="contact.item1.label">Email us</span>
                   <span class="contact__item-value">hello@eedigital.com</span>
                 </div>
               </a>
@@ -88,7 +88,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
                 <div class="contact__item-text">
-                  <span class="contact__item-label">Call us</span>
+                  <span class="contact__item-label" data-i18n="contact.item2.label">Call us</span>
                   <span class="contact__item-value">+44 7700 000000</span>
                 </div>
               </a>
@@ -97,8 +97,8 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 </div>
                 <div class="contact__item-text">
-                  <span class="contact__item-label">Response time</span>
-                  <span class="contact__item-value">Within 24 hours</span>
+                  <span class="contact__item-label" data-i18n="contact.item3.label">Response time</span>
+                  <span class="contact__item-value" data-i18n="contact.item3.val">Within 24 hours</span>
                 </div>
               </div>
             </div>
@@ -106,20 +106,20 @@
             <div class="contact__trust">
               <div class="contact__trust-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                Free discovery call
+                <span data-i18n="contact.trust1">Free discovery call</span>
               </div>
               <div class="contact__trust-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                No obligation quote
+                <span data-i18n="contact.trust2">No obligation quote</span>
               </div>
               <div class="contact__trust-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                Delivered in 2 weeks
+                <span data-i18n="contact.trust3">Delivered in 2 weeks</span>
               </div>
             </div>
 
             <div class="contact__social">
-              <p class="contact__social-label">Find us online</p>
+              <p class="contact__social-label" data-i18n="contact.social.label">Find us online</p>
               <div class="contact__social-links">
                 <a href="#" class="social__link">Instagram</a>
                 <a href="#" class="social__link">LinkedIn</a>
@@ -132,8 +132,8 @@
         <div class="contact__form-wrap">
           <form class="contact__form" id="contactForm" novalidate>
             <div class="contact__form-header">
-              <h3 class="contact__form-title">Tell us about your project</h3>
-              <p class="contact__form-sub">We'll review your message and get back to you with a free consultation and quote.</p>
+              <h3 class="contact__form-title" data-i18n="contact.form.title">Tell us about your project</h3>
+              <p class="contact__form-sub" data-i18n="contact.form.sub">We'll review your message and get back to you with a free consultation and quote.</p>
             </div>
             <div class="form__row">
               <div class="form__group">
@@ -147,11 +147,11 @@
             </div>
             <div class="form__row">
               <div class="form__group">
-                <label for="phone">Phone (optional)</label>
+                <label for="phone" data-i18n="form.phone">Phone (optional)</label>
                 <input type="tel" id="phone" name="phone" placeholder="+44 7700 000000" />
               </div>
               <div class="form__group">
-                <label for="budget">Approximate budget</label>
+                <label for="budget" data-i18n="form.budget">Approximate budget</label>
                 <select id="budget" name="budget">
                   <option value="">Select a range...</option>
                   <option>Under £1,000</option>
@@ -163,7 +163,7 @@
               </div>
             </div>
             <div class="form__group">
-              <label for="service">Service needed</label>
+              <label for="service" data-i18n="form.service">Service needed</label>
               <select id="service" name="service">
                 <option value="">Select a service...</option>
                 <option>Website Design</option>
@@ -195,34 +195,34 @@
     <section class="section section--alt">
       <div class="container faq__container">
         <div class="section__header">
-          <p class="section__label">FAQ</p>
-          <h2 class="section__title">Common questions answered</h2>
+          <p class="section__label" data-i18n="contact.faq.label">FAQ</p>
+          <h2 class="section__title" data-i18n="contact.faq.title">Common questions answered</h2>
         </div>
         <div class="faq__list">
 
           <div class="faq__item">
-            <button class="faq__question">How long does it take to build a website? <span class="faq__icon">+</span></button>
-            <div class="faq__answer"><p>Most projects are completed within 2–4 weeks depending on scope. Simple sites and landing pages can be done in under 2 weeks, while larger or more complex builds may take 3–5 weeks. We'll give you a clear timeline before we start.</p></div>
+            <button class="faq__question"><span data-i18n="contact.faq1.q">How long does it take to build a website?</span> <span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p data-i18n="contact.faq1.a">Most projects are completed within 2–4 weeks depending on scope. Simple sites and landing pages can be done in under 2 weeks, while larger or more complex builds may take 3–5 weeks. We'll give you a clear timeline before we start.</p></div>
           </div>
 
           <div class="faq__item">
-            <button class="faq__question">Do I need to provide the content? <span class="faq__icon">+</span></button>
-            <div class="faq__answer"><p>You'll need to provide your logo, brand colours, and any specific text or images you want. If you need help with copywriting or photography, we can recommend trusted partners or handle it for an additional fee.</p></div>
+            <button class="faq__question"><span data-i18n="contact.faq2.q">Do I need to provide the content?</span> <span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p data-i18n="contact.faq2.a">You'll need to provide your logo, brand colours, and any specific text or images you want. If you need help with copywriting or photography, we can recommend trusted partners or handle it for an additional fee.</p></div>
           </div>
 
           <div class="faq__item">
-            <button class="faq__question">Will my site work on mobile and tablet? <span class="faq__icon">+</span></button>
-            <div class="faq__answer"><p>Absolutely. Every website we build is fully responsive and tested across all major devices and screen sizes. Mobile performance is one of our top priorities — it affects both UX and SEO rankings.</p></div>
+            <button class="faq__question"><span data-i18n="contact.faq3.q">Will my site work on mobile and tablet?</span> <span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p data-i18n="contact.faq3.a">Absolutely. Every website we build is fully responsive and tested across all major devices and screen sizes. Mobile performance is one of our top priorities — it affects both UX and SEO rankings.</p></div>
           </div>
 
           <div class="faq__item">
-            <button class="faq__question">Can I update the website myself? <span class="faq__icon">+</span></button>
-            <div class="faq__answer"><p>For small changes and updates after launch, just send us a message — we handle it for you quickly. For regular ongoing updates, our maintenance packages are a great fit. We keep things simple and hassle-free.</p></div>
+            <button class="faq__question"><span data-i18n="contact.faq4.q">Can I update the website myself?</span> <span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p data-i18n="contact.faq4.a">For small changes and updates after launch, just send us a message — we handle it for you quickly. For regular ongoing updates, our maintenance packages are a great fit. We keep things simple and hassle-free.</p></div>
           </div>
 
           <div class="faq__item">
-            <button class="faq__question">What happens after the site goes live? <span class="faq__icon">+</span></button>
-            <div class="faq__answer"><p>All packages include post-launch support. We fix any bugs that arise, and we're always available if you have questions. Ongoing maintenance retainers are also available for regular updates.</p></div>
+            <button class="faq__question"><span data-i18n="contact.faq5.q">What happens after the site goes live?</span> <span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p data-i18n="contact.faq5.a">All packages include post-launch support. We fix any bugs that arise, and we're always available if you have questions. Ongoing maintenance retainers are also available for regular updates.</p></div>
           </div>
 
         </div>
@@ -239,28 +239,28 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="index.html" class="nav__logo">E&amp;E<span>Digital</span></a>
-        <p>Modern websites for growing businesses.</p>
+        <p data-i18n="footer.tagline">Modern websites for growing businesses.</p>
       </div>
       <div class="footer__links">
         <div class="footer__col">
-          <h4>Services</h4>
-          <a href="services.html">Web Design</a>
-          <a href="services.html">Web Development</a>
-          <a href="services.html">Ongoing Support</a>
-          <a href="services.html">SEO</a>
+          <h4 data-i18n="footer.services">Services</h4>
+          <a href="services.html" data-i18n="footer.link.design">Web Design</a>
+          <a href="services.html" data-i18n="footer.link.dev">Web Development</a>
+          <a href="services.html" data-i18n="footer.link.support">Ongoing Support</a>
+          <a href="services.html" data-i18n="filter.seo">SEO</a>
         </div>
         <div class="footer__col">
-          <h4>Company</h4>
-          <a href="about.html">About</a>
-          <a href="work.html">Portfolio</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="contact.html">Contact</a>
+          <h4 data-i18n="footer.company">Company</h4>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="work.html" data-i18n="footer.link.portfolio">Portfolio</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+          <a href="contact.html" data-i18n="footer.link.contact">Contact</a>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <span>&copy; 2026 E&amp;E Digital. All rights reserved.</span>
+        <span data-i18n="footer.rights">&copy; 2026 E&amp;E Digital. All rights reserved.</span>
         <div class="footer__legal">
           <a href="impressum.html">Impressum</a>
           <a href="datenschutz.html">Datenschutz</a>
