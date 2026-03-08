@@ -309,6 +309,11 @@ const translations = {
     'page.about.doctitle':    'About — E&E Digital',
     'page.pricing.doctitle':  'Pricing — E&E Digital',
     'page.contact.doctitle':  'Contact — E&E Digital',
+    'page.404.doctitle':      '404 — Page Not Found | E&E Digital',
+    'page.404.label':         '404 Error',
+    'page.404.title':         'Page Not Found',
+    'page.404.sub':           "The page you're looking for doesn't exist or has been moved.",
+    'page.404.cta':           'Go Back Home',
 
     // OG / Twitter meta
     'meta.index.title':    'E&E Digital — Web Design & Development Agency',
@@ -770,6 +775,11 @@ const translations = {
     'page.about.doctitle':    'Hakkımızda — E&E Digital',
     'page.pricing.doctitle':  'Fiyatlar — E&E Digital',
     'page.contact.doctitle':  'İletişim — E&E Digital',
+    'page.404.doctitle':      '404 — Sayfa Bulunamadı | E&E Digital',
+    'page.404.label':         '404 Hatası',
+    'page.404.title':         'Sayfa Bulunamadı',
+    'page.404.sub':           'Aradığınız sayfa mevcut değil veya taşınmış olabilir.',
+    'page.404.cta':           'Ana Sayfaya Dön',
 
     // OG / Twitter meta
     'meta.index.title':    'E&E Digital — Web Tasarım & Geliştirme Ajansı',
@@ -1231,6 +1241,11 @@ const translations = {
     'page.about.doctitle':    'Über uns — E&E Digital',
     'page.pricing.doctitle':  'Preise — E&E Digital',
     'page.contact.doctitle':  'Kontakt — E&E Digital',
+    'page.404.doctitle':      '404 — Seite nicht gefunden | E&E Digital',
+    'page.404.label':         '404 Fehler',
+    'page.404.title':         'Seite nicht gefunden',
+    'page.404.sub':           'Die gesuchte Seite existiert nicht oder wurde verschoben.',
+    'page.404.cta':           'Zurück zur Startseite',
 
     // OG / Twitter meta
     'meta.index.title':    'E&E Digital — Webdesign & Entwicklungsagentur',

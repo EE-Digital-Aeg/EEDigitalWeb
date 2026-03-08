@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page.404.doctitle">404 — Page Not Found | E&amp;E Digital</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');</script>
+  <style>
+    .error-section {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1.5rem;
+    }
+    .error-section__inner {
+      max-width: 520px;
+    }
+    .error-section__code {
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 800;
+      line-height: 1;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .error-section__label {
+      font-size: .875rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .error-section__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .error-section__sub {
+      color: var(--text-muted);
+      font-size: 1.125rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">E&amp;E<span>Digital</span></a>
+      <nav class="nav__links">
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="work.html" data-i18n="nav.work">Work</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="contact.html" class="btn btn--sm" data-i18n="nav.cta">Get a Quote</a>
+      </nav>
+      <div class="nav__controls">
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="tr">TR</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav__burger" id="burger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="work.html" data-i18n="nav.work">Work</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+      <a href="contact.html" data-i18n="nav.cta">Get a Quote</a>
+      <div class="nav__mobile-footer">
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="tr">TR</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-section">
+      <div class="error-section__inner">
+        <div class="error-section__code">404</div>
+        <p class="error-section__label" data-i18n="page.404.label">404 Error</p>
+        <h1 class="error-section__title" data-i18n="page.404.title">Page Not Found</h1>
+        <p class="error-section__sub" data-i18n="page.404.sub">The page you're looking for doesn't exist or has been moved.</p>
+        <a href="index.html" class="btn btn--primary" data-i18n="page.404.cta">Go Back Home</a>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo">E&amp;E<span>Digital</span></a>
+        <p data-i18n="footer.tagline">Modern websites for growing businesses.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4 data-i18n="footer.services">Services</h4>
+          <a href="services.html" data-i18n="footer.link.design">Web Design</a>
+          <a href="services.html" data-i18n="footer.link.dev">Web Development</a>
+          <a href="services.html" data-i18n="footer.link.support">Ongoing Support</a>
+          <a href="services.html" data-i18n="footer.link.seo">SEO</a>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.company">Company</h4>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="work.html" data-i18n="footer.link.portfolio">Portfolio</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+          <a href="contact.html" data-i18n="footer.link.contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span data-i18n="footer.rights">&copy; 2026 E&amp;E Digital. All rights reserved.</span>
+        <div class="footer__legal">
+          <a href="impressum.html" data-i18n="footer.link.impressum">Impressum</a>
+          <a href="datenschutz.html" data-i18n="footer.link.datenschutz">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
