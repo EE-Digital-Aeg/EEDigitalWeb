@@ -277,8 +277,10 @@ const translations = {
     'footer.link.design':   'Web Design',
     'footer.link.dev':      'Web Development',
     'footer.link.support':  'Ongoing Support',
-    'footer.link.portfolio':'Portfolio',
-    'footer.link.contact':  'Contact',
+    'footer.link.portfolio':  'Portfolio',
+    'footer.link.contact':    'Contact',
+    'footer.link.impressum':  'Imprint',
+    'footer.link.datenschutz':'Privacy Policy',
 
     // Page heroes
     'page.services.label': 'What we offer',
@@ -535,6 +537,34 @@ const translations = {
     'contact.faq4.a': 'For small changes and updates after launch, just send us a message — we handle it for you quickly. For regular ongoing updates, our maintenance packages are a great fit. We keep things simple and hassle-free.',
     'contact.faq5.q': 'What happens after the site goes live?',
     'contact.faq5.a': 'All packages include post-launch support. We fix any bugs that arise, and we\'re always available if you have questions. Ongoing maintenance retainers are also available for regular updates.',
+
+    // Impressum page
+    'page.impressum.label':          'Legal',
+    'page.impressum.title':          'Impressum',
+    'page.impressum.sub':            'Information pursuant to § 5 TMG (German Telemedia Act)',
+    'impressum.h.responsible':       'Responsible party',
+    'impressum.h.contact':           'Contact',
+    'impressum.h.vat':               'VAT ID',
+    'impressum.h.profession':        'Professional designation',
+    'impressum.h.eu':                'EU Dispute Resolution',
+    'impressum.h.consumer':          'Consumer Dispute Resolution',
+    'impressum.h.liability.content': 'Liability for Content',
+    'impressum.h.liability.links':   'Liability for Links',
+    'impressum.h.copyright':         'Copyright',
+
+    // Datenschutz page
+    'page.datenschutz.label': 'Legal',
+    'page.datenschutz.title': 'Privacy Policy',
+    'page.datenschutz.sub':   'Information pursuant to GDPR / Art. 13 GDPR',
+    'dsgvo.h1': '1. Controller',
+    'dsgvo.h2': '2. General Information on Data Processing',
+    'dsgvo.h3': '3. Hosting',
+    'dsgvo.h4': '4. Server Log Files',
+    'dsgvo.h5': '5. Contact Form',
+    'dsgvo.h6': '6. Local Storage (localStorage)',
+    'dsgvo.h7': '7. Google Fonts',
+    'dsgvo.h8': '8. Your Rights as a Data Subject',
+    'dsgvo.h9': '9. Updates to this Privacy Policy',
   },
 
   tr: {
@@ -612,8 +642,10 @@ const translations = {
     'footer.link.design':   'Web Tasarım',
     'footer.link.dev':      'Web Geliştirme',
     'footer.link.support':  'Sürekli Destek',
-    'footer.link.portfolio':'Portföy',
-    'footer.link.contact':  'İletişim',
+    'footer.link.portfolio':  'Portföy',
+    'footer.link.contact':    'İletişim',
+    'footer.link.impressum':  'Künye',
+    'footer.link.datenschutz':'Gizlilik Politikası',
 
     // Page heroes
     'page.services.label': 'Ne sunuyoruz',
@@ -870,6 +902,34 @@ const translations = {
     'contact.faq4.a': 'Yayından sonra küçük değişiklikler ve güncellemeler için bize mesaj gönderin — hızlıca hallederiz. Düzenli süregelen güncellemeler için bakım paketlerimiz harika bir seçenek. Her şeyi basit ve zahmetsiz tutuyoruz.',
     'contact.faq5.q': 'Site yayına girdikten sonra ne olur?',
     'contact.faq5.a': 'Tüm paketler yayın sonrası destek içerir. Ortaya çıkan hataları düzeltiyor, sorularınız için her zaman hazır bulunuyoruz. Düzenli güncellemeler için süregelen bakım ücretleri de mevcuttur.',
+
+    // Impressum page
+    'page.impressum.label':          'Yasal',
+    'page.impressum.title':          'Impressum',
+    'page.impressum.sub':            '§ 5 TMG uyarınca yasal bildirim',
+    'impressum.h.responsible':       'Sorumlu taraf',
+    'impressum.h.contact':           'İletişim',
+    'impressum.h.vat':               'KDV Kimlik No',
+    'impressum.h.profession':        'Mesleki unvan',
+    'impressum.h.eu':                'AB Uyuşmazlık Çözümü',
+    'impressum.h.consumer':          'Tüketici Uyuşmazlık Çözümü',
+    'impressum.h.liability.content': 'İçerik Sorumluluğu',
+    'impressum.h.liability.links':   'Bağlantı Sorumluluğu',
+    'impressum.h.copyright':         'Telif Hakkı',
+
+    // Datenschutz page
+    'page.datenschutz.label': 'Yasal',
+    'page.datenschutz.title': 'Gizlilik Politikası',
+    'page.datenschutz.sub':   'GDPR / Mad. 13 GDPR uyarınca bilgiler',
+    'dsgvo.h1': '1. Veri Sorumlusu',
+    'dsgvo.h2': '2. Veri İşleme Hakkında Genel Bilgiler',
+    'dsgvo.h3': '3. Barındırma',
+    'dsgvo.h4': '4. Sunucu Günlük Dosyaları',
+    'dsgvo.h5': '5. İletişim Formu',
+    'dsgvo.h6': '6. Yerel Depolama (localStorage)',
+    'dsgvo.h7': '7. Google Fonts',
+    'dsgvo.h8': '8. İlgili Kişi Olarak Haklarınız',
+    'dsgvo.h9': '9. Bu Gizlilik Politikasının Güncellenmesi',
   },
 
   de: {
@@ -947,8 +1007,10 @@ const translations = {
     'footer.link.design':   'Webdesign',
     'footer.link.dev':      'Webentwicklung',
     'footer.link.support':  'Laufender Support',
-    'footer.link.portfolio':'Portfolio',
-    'footer.link.contact':  'Kontakt',
+    'footer.link.portfolio':  'Portfolio',
+    'footer.link.contact':    'Kontakt',
+    'footer.link.impressum':  'Impressum',
+    'footer.link.datenschutz':'Datenschutz',
 
     // Page heroes
     'page.services.label': 'Was wir anbieten',
@@ -1205,6 +1267,34 @@ const translations = {
     'contact.faq4.a': 'Für kleine Änderungen und Updates nach dem Launch senden Sie uns einfach eine Nachricht — wir erledigen es schnell für Sie. Für regelmäßige, fortlaufende Updates sind unsere Wartungspakete ideal. Wir halten alles einfach und unkompliziert.',
     'contact.faq5.q': 'Was passiert, nachdem die Website live geht?',
     'contact.faq5.a': 'Alle Pakete beinhalten Support nach dem Launch. Wir beheben auftretende Fehler und sind immer für Ihre Fragen verfügbar. Fortlaufende Wartungsretainer sind auch für regelmäßige Updates verfügbar.',
+
+    // Impressum page
+    'page.impressum.label':          'Rechtliches',
+    'page.impressum.title':          'Impressum',
+    'page.impressum.sub':            'Angaben gemäß § 5 TMG',
+    'impressum.h.responsible':       'Verantwortlich für den Inhalt',
+    'impressum.h.contact':           'Kontakt',
+    'impressum.h.vat':               'Umsatzsteuer-ID',
+    'impressum.h.profession':        'Berufsbezeichnung und berufsrechtliche Regelungen',
+    'impressum.h.eu':                'EU-Streitschlichtung',
+    'impressum.h.consumer':          'Verbraucherschlichtung',
+    'impressum.h.liability.content': 'Haftung für Inhalte',
+    'impressum.h.liability.links':   'Haftung für Links',
+    'impressum.h.copyright':         'Urheberrecht',
+
+    // Datenschutz page
+    'page.datenschutz.label': 'Rechtliches',
+    'page.datenschutz.title': 'Datenschutzerklärung',
+    'page.datenschutz.sub':   'Informationen gemäß DSGVO / Art. 13 DSGVO',
+    'dsgvo.h1': '1. Verantwortlicher',
+    'dsgvo.h2': '2. Allgemeine Hinweise zur Datenverarbeitung',
+    'dsgvo.h3': '3. Hosting',
+    'dsgvo.h4': '4. Server-Log-Dateien',
+    'dsgvo.h5': '5. Kontaktformular',
+    'dsgvo.h6': '6. Lokaler Speicher (localStorage)',
+    'dsgvo.h7': '7. Google Fonts',
+    'dsgvo.h8': '8. Ihre Rechte als betroffene Person',
+    'dsgvo.h9': '9. Aktualität und Änderung dieser Datenschutzerklärung',
   }
 };
 
