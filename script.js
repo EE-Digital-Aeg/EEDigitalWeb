@@ -539,6 +539,7 @@ const translations = {
     'contact.faq5.a': 'All packages include post-launch support. We fix any bugs that arise, and we\'re always available if you have questions. Ongoing maintenance retainers are also available for regular updates.',
 
     // Impressum page
+    'page.impressum.doctitle':       'Imprint — E&E Digital',
     'page.impressum.label':          'Legal',
     'page.impressum.title':          'Impressum',
     'page.impressum.sub':            'Information pursuant to § 5 TMG (German Telemedia Act)',
@@ -553,6 +554,7 @@ const translations = {
     'impressum.h.copyright':         'Copyright',
 
     // Datenschutz page
+    'page.datenschutz.doctitle': 'Privacy Policy — E&E Digital',
     'page.datenschutz.label': 'Legal',
     'page.datenschutz.title': 'Privacy Policy',
     'page.datenschutz.sub':   'Information pursuant to GDPR / Art. 13 GDPR',
@@ -948,6 +950,7 @@ const translations = {
     'contact.faq5.a': 'Tüm paketler yayın sonrası destek içerir. Ortaya çıkan hataları düzeltiyor, sorularınız için her zaman hazır bulunuyoruz. Düzenli güncellemeler için süregelen bakım ücretleri de mevcuttur.',
 
     // Impressum page
+    'page.impressum.doctitle':       'Künye — E&E Digital',
     'page.impressum.label':          'Yasal',
     'page.impressum.title':          'Impressum',
     'page.impressum.sub':            '§ 5 TMG uyarınca yasal bildirim',
@@ -962,6 +965,7 @@ const translations = {
     'impressum.h.copyright':         'Telif Hakkı',
 
     // Datenschutz page
+    'page.datenschutz.doctitle': 'Gizlilik Politikası — E&E Digital',
     'page.datenschutz.label': 'Yasal',
     'page.datenschutz.title': 'Gizlilik Politikası',
     'page.datenschutz.sub':   'GDPR / Mad. 13 GDPR uyarınca bilgiler',
@@ -1357,6 +1361,7 @@ const translations = {
     'contact.faq5.a': 'Alle Pakete beinhalten Support nach dem Launch. Wir beheben auftretende Fehler und sind immer für Ihre Fragen verfügbar. Fortlaufende Wartungsretainer sind auch für regelmäßige Updates verfügbar.',
 
     // Impressum page
+    'page.impressum.doctitle':       'Impressum — E&E Digital',
     'page.impressum.label':          'Rechtliches',
     'page.impressum.title':          'Impressum',
     'page.impressum.sub':            'Angaben gemäß § 5 TMG',
@@ -1371,6 +1376,7 @@ const translations = {
     'impressum.h.copyright':         'Urheberrecht',
 
     // Datenschutz page
+    'page.datenschutz.doctitle': 'Datenschutzerklärung — E&E Digital',
     'page.datenschutz.label': 'Rechtliches',
     'page.datenschutz.title': 'Datenschutzerklärung',
     'page.datenschutz.sub':   'Informationen gemäß DSGVO / Art. 13 DSGVO',
