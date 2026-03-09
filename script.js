@@ -27,7 +27,7 @@ mobileMenu.querySelectorAll('a').forEach(link => {
 
 // ---------- Scroll reveal ----------
 const revealEls = document.querySelectorAll(
-  '.card, .work__card, .step, .testimonial, .hero__stats, .about__card, .highlight, .value__card, .pricing__card, .empty-state, .first-client, .section__header, .faq__item, .stats__item, .contact__item, .contact__form-wrap, .contact__social, .contact__trust, .about__text, .cta-banner__inner, .legal-block, .page-hero__label, .page-hero__title, .page-hero__sub, .pricing__compare, .pricing__cta'
+  '.card, .work__card, .step, .testimonial, .about__card, .highlight, .value__card, .pricing__card, .empty-state, .first-client, .section__header, .faq__item, .stats__item, .contact__item, .contact__form-wrap, .contact__social, .contact__trust, .about__text, .cta-banner__inner, .legal-block, .page-hero__label, .page-hero__title, .page-hero__sub, .pricing__compare, .pricing__cta'
 );
 
 revealEls.forEach(el => el.classList.add('reveal'));
