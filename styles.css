@@ -1005,8 +1005,12 @@ a.contact__item:hover { border-color: var(--accent); box-shadow: 0 0 18px var(--
 .comparison tbody tr:last-child td { border-bottom: none; }
 
 /* ---------- SCROLL ANIMATIONS ---------- */
-.reveal { opacity: 0; transform: translateY(48px); transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1); }
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
+.page-hero__label.reveal,
+.page-hero__title.reveal,
+.page-hero__sub.reveal { transform: translateY(24px); transition-duration: 0.6s; }
+.legal-block.reveal { transform: translateY(28px); }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1024px) {
