@@ -95,9 +95,11 @@ if (form) form.addEventListener('submit', async (e) => {
       setTimeout(() => formSuccess.classList.remove('show'), 6000);
     } else {
       formError.classList.add('show');
+      setTimeout(() => formError.classList.remove('show'), 8000);
     }
   } catch {
     formError.classList.add('show');
+    setTimeout(() => formError.classList.remove('show'), 8000);
   }
 
   btn.textContent = translations[currentLang]?.['form.submit'] || 'Send Message';
@@ -127,32 +129,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ---------- Counter animation ----------
-function animateCounter(el) {
-  const target = parseFloat(el.dataset.target);
-  const suffix = el.dataset.suffix || '';
-  const duration = 1800;
-  const steps = 60;
-  const increment = target / steps;
-  let current = 0;
-  let count = 0;
-  const timer = setInterval(() => {
-    count++;
-    current = Math.min(current + increment, target);
-    el.textContent = (Number.isInteger(target) ? Math.round(current) : current.toFixed(1)) + suffix;
-    if (count >= steps) clearInterval(timer);
-  }, duration / steps);
-}
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounter(entry.target);
-      counterObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
-document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
-
 // ---------- Back to top ----------
 const backToTop = document.getElementById('backToTop');
 if (backToTop) {
@@ -177,21 +153,6 @@ document.querySelectorAll('.faq__item').forEach(item => {
     const isOpen = item.classList.contains('open');
     document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('open'));
     if (!isOpen) item.classList.add('open');
-  });
-});
-
-// ---------- Portfolio filter ----------
-const filterBtns = document.querySelectorAll('.filter__btn');
-const workCards = document.querySelectorAll('.work__card');
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    workCards.forEach(card => {
-      const match = filter === 'all' || card.dataset.category === filter;
-      card.classList.toggle('hidden', !match);
-    });
   });
 });
 
@@ -585,7 +546,6 @@ const translations = {
     'contact.trust1':       'Free discovery call',
     'contact.trust2':       'No obligation quote',
     'contact.trust3':       'Delivered in 2 weeks',
-    'contact.social.label': 'Find us online',
 
     // Contact page — form header
     'contact.form.title': 'Tell us about your project',
@@ -671,7 +631,6 @@ const translations = {
     'dsgvo.p6b':     'This data is not transmitted to servers and remains exclusively local on your device. This does not constitute cookies in the legal sense; consent is therefore not required. The basis is Art. 6(1)(f) GDPR (legitimate interest in user-friendly presentation of the website).',
     'dsgvo.p7a':     'This website uses the Inter font, which is hosted locally on our server. No data is transferred to external servers.',
     'dsgvo.p7b':     'The font is served exclusively from our own web server. No personal data is transmitted to third parties. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in a uniform and appealing presentation of the website).',
-    'dsgvo.p7c':     '',
     'dsgvo.p8a':     'You have the following rights with respect to us regarding the personal data concerning you:',
     'dsgvo.p8.list': '<li><strong>Right of access</strong> (Art. 15 GDPR)</li><li><strong>Right to rectification</strong> (Art. 16 GDPR)</li><li><strong>Right to erasure</strong> (Art. 17 GDPR)</li><li><strong>Right to restriction of processing</strong> (Art. 18 GDPR)</li><li><strong>Right to data portability</strong> (Art. 20 GDPR)</li><li><strong>Right to object</strong> to processing (Art. 21 GDPR)</li><li><strong>Right to withdraw</strong> consent (Art. 7(3) GDPR)</li>',
     'dsgvo.p8b':     'To exercise your rights, please contact: <a href="mailto:ee-digital@outlook.com">ee-digital@outlook.com</a>',
@@ -1052,7 +1011,6 @@ const translations = {
     'contact.trust1':       'Ücretsiz keşif görüşmesi',
     'contact.trust2':       'Bağlayıcılığı olmayan teklif',
     'contact.trust3':       '2 haftada teslim',
-    'contact.social.label': 'Bizi çevrimiçi bulun',
 
     // Contact page — form header
     'contact.form.title': 'Projenizi anlatın',
@@ -1138,7 +1096,6 @@ const translations = {
     'dsgvo.p6b':     'Bu veriler sunuculara iletilmez ve yalnızca cihazınızda yerel olarak kalır. Bu, hukuki anlamda çerez niteliği taşımaz; dolayısıyla rıza gerekmez. Dayanak, GDPR Mad. 6(1)(f)\'dir (web sitesinin kullanıcı dostu sunumundaki meşru menfaat).',
     'dsgvo.p7a':     'Bu web sitesi, kendi sunucumuzda yerel olarak barındırılan Inter yazı tipini kullanmaktadır. Harici sunuculara herhangi bir veri aktarımı gerçekleşmez.',
     'dsgvo.p7b':     'Yazı tipi yalnızca kendi web sunucumuzdan sunulmaktadır. Üçüncü taraflara hiçbir kişisel veri iletilmez. Hukuki dayanak, GDPR Mad. 6(1)(f)dir (web sitesinin tekdüze ve çekici sunumundaki meşru menfaat).',
-    'dsgvo.p7c':     '',
     'dsgvo.p8a':     'Sizi ilgilendiren kişisel veriler konusunda bize karşı aşağıdaki haklara sahipsiniz:',
     'dsgvo.p8.list': '<li><strong>Erişim hakkı</strong> (GDPR Mad. 15)</li><li><strong>Düzeltme hakkı</strong> (GDPR Mad. 16)</li><li><strong>Silme hakkı</strong> (GDPR Mad. 17)</li><li><strong>İşlemeyi kısıtlama hakkı</strong> (GDPR Mad. 18)</li><li><strong>Veri taşınabilirliği hakkı</strong> (GDPR Mad. 20)</li><li><strong>İtiraz hakkı</strong> işlemeye karşı (GDPR Mad. 21)</li><li><strong>Geri alma hakkı</strong> verilen rızalar için (GDPR Mad. 7(3))</li>',
     'dsgvo.p8b':     'Haklarınızı kullanmak için lütfen şu adrese başvurun: <a href="mailto:ee-digital@outlook.com">ee-digital@outlook.com</a>',
@@ -1519,7 +1476,6 @@ const translations = {
     'contact.trust1':       'Kostenloses Erstgespräch',
     'contact.trust2':       'Unverbindliches Angebot',
     'contact.trust3':       'Lieferung in 2 Wochen',
-    'contact.social.label': 'Finden Sie uns online',
 
     // Contact page — form header
     'contact.form.title': 'Erzählen Sie uns von Ihrem Projekt',
@@ -1605,7 +1561,6 @@ const translations = {
     'dsgvo.p6b':     'Diese Daten werden nicht an Server übertragen und verbleiben ausschließlich lokal auf Ihrem Gerät. Es handelt sich um keine Cookies im rechtlichen Sinne; eine Einwilligung ist daher nicht erforderlich. Grundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der nutzerfreundlichen Darstellung der Website).',
     'dsgvo.p7a':     'Diese Website verwendet die Schriftart Inter, welche lokal auf unserem Server eingebunden ist. Es findet kein Datentransfer an externe Server statt.',
     'dsgvo.p7b':     'Die Schriftart wird ausschließlich von unserem eigenen Webserver ausgeliefert. Dabei werden keine personenbezogenen Daten an Dritte übermittelt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer einheitlichen und ansprechenden Darstellung der Website).',
-    'dsgvo.p7c':     '',
     'dsgvo.p8a':     'Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:',
     'dsgvo.p8.list': '<li><strong>Recht auf Auskunft</strong> (Art. 15 DSGVO)</li><li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO)</li><li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO)</li><li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li><li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li><li><strong>Recht auf Widerspruch</strong> gegen die Verarbeitung (Art. 21 DSGVO)</li><li><strong>Recht auf Widerruf</strong> erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</li>',
     'dsgvo.p8b':     'Zur Ausübung Ihrer Rechte wenden Sie sich bitte an: <a href="mailto:ee-digital@outlook.com">ee-digital@outlook.com</a>',
