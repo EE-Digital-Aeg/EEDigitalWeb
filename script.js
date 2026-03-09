@@ -568,7 +568,7 @@ const translations = {
     // Impressum page
     'page.impressum.doctitle':       'Imprint — E&E Digital',
     'page.impressum.label':          'Legal',
-    'page.impressum.title':          'Impressum',
+    'page.impressum.title':          'Imprint',
     'page.impressum.sub':            'Information pursuant to § 5 TMG (German Telemedia Act)',
     'impressum.h.responsible':       'Responsible party',
     'impressum.h.contact':           'Contact',
@@ -1034,7 +1034,7 @@ const translations = {
     // Impressum page
     'page.impressum.doctitle':       'Künye — E&E Digital',
     'page.impressum.label':          'Yasal',
-    'page.impressum.title':          'Impressum',
+    'page.impressum.title':          'Künye',
     'page.impressum.sub':            '§ 5 TMG uyarınca yasal bildirim',
     'impressum.h.responsible':       'Sorumlu taraf',
     'impressum.h.contact':           'İletişim',
