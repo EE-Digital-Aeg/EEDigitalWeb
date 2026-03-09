@@ -904,9 +904,11 @@ a.contact__item:hover { border-color: var(--accent); box-shadow: 0 0 18px var(--
 .footer__col a:hover { color: var(--accent); }
 .footer__bottom { border-top: 1px solid var(--border); padding: 20px 0; }
 .footer__bottom .container { display: flex; justify-content: space-between; align-items: center; font-size: 13px; flex-wrap: wrap; gap: 8px; color: var(--text-muted); }
-.footer__legal { display: flex; gap: 20px; }
+.footer__legal { display: flex; gap: 20px; align-items: center; }
 .footer__legal a { font-size: 13px; color: var(--text-muted); transition: color var(--transition); }
 .footer__legal a:hover { color: var(--accent); }
+.footer__ig { color: var(--text-muted); display: flex; align-items: center; transition: color var(--transition); }
+.footer__ig:hover { color: var(--accent); }
 
 /* ---------- LEGAL PAGES ---------- */
 .legal-content { max-width: 760px; margin: 0 auto; }
