@@ -151,30 +151,30 @@ function buildReplyDraft(lead) {
   if (lead.missing.length) {
     return `${greeting(lead.name)}
 
-vielen Dank fuer Ihre Anfrage bei E&E Digital.
+vielen Dank für Ihre Anfrage bei E&E Digital.
 
-Ihr Projekt klingt interessant. Damit ich Ihnen eine sinnvolle Empfehlung und eine realistische Einschaetzung geben kann, braeuchte ich noch kurz ein paar Informationen:
+Ihr Projekt klingt interessant. Damit ich Ihnen eine sinnvolle Empfehlung und eine realistische Einschätzung geben kann, bräuchte ich noch kurz ein paar Informationen:
 
 ${lead.missing.map((item) => `- ${item}`).join("\n")}
 
-Danach kann ich Ihnen den besten naechsten Schritt vorschlagen und eine deutlich genauere Einschaetzung geben.
+Danach kann ich Ihnen den besten nächsten Schritt vorschlagen und eine deutlich genauere Einschätzung geben.
 
-Viele Gruesse
+Viele Grüße
 Ebu Bekir Yel
 E&E Digital`;
   }
 
   return `${greeting(lead.name)}
 
-vielen Dank fuer Ihre Anfrage bei E&E Digital.
+vielen Dank für Ihre Anfrage bei E&E Digital.
 
 Nach Ihrer Nachricht klingt das nach einem Projekt im Bereich ${lead.projectType}. Das angegebene Budget liegt bei ${lead.budget}, der Zeitplan ist ${lead.timeline}, und das Ziel scheint ${lead.goal} zu sein.
 
-Der beste naechste Schritt waere ein kurzer Discovery Call. Dann kann ich Ihre Ziele, Inhalte, Designrichtung und den geplanten Launch kurz verstehen und Ihnen danach konkreter sagen, wie ich vorgehen wuerde.
+Der beste nächste Schritt wäre ein kurzer Discovery Call. Dann kann ich Ihre Ziele, Inhalte, Designrichtung und den geplanten Launch kurz verstehen und Ihnen danach konkreter sagen, wie ich vorgehen würde.
 
-Haetten Sie diese oder naechste Woche 15 Minuten Zeit?
+Hätten Sie diese oder nächste Woche 15 Minuten Zeit?
 
-Viele Gruesse
+Viele Grüße
 Ebu Bekir Yel
 E&E Digital`;
 }
@@ -185,7 +185,7 @@ function buildInternalNote(lead) {
 Name: ${lead.name || "-"}
 E-Mail: ${lead.email || "-"}
 Telefon: ${lead.phone || "-"}
-Ausgewaehlte Leistung: ${lead.service || "-"}
+Ausgewählte Leistung: ${lead.service || "-"}
 Erkannter Projekttyp: ${lead.projectType}
 Budget: ${lead.budget}
 Zeitplan: ${lead.timeline}
@@ -194,9 +194,9 @@ Ziel: ${lead.goal}
 Score: ${lead.score}
 Prioritaet: ${lead.priority}
 Status: ${lead.status}
-Naechste Aktion: ${lead.nextAction}
+Nächste Aktion: ${lead.nextAction}
 Follow-up: ${lead.followUpDate}
-Fehlende Informationen: ${lead.missing.length ? lead.missing.join(", ") : "keine wichtigen Luecken"}
+Fehlende Informationen: ${lead.missing.length ? lead.missing.join(", ") : "keine wichtigen Lücken"}
 
 Empfohlene Antwort:
 ${lead.replyDraft}`;
@@ -224,23 +224,14 @@ module.exports = async function handler(req, res) {
       "Lead Score": analysis.score,
       "Lead Status": analysis.status,
       "Prioritaet": analysis.priority,
-      "Naechste Aktion": analysis.nextAction,
+      "Nächste Aktion": analysis.nextAction,
       "Follow-up Datum": analysis.followUpDate,
       "Erkannter Projekttyp": analysis.projectType,
       "Branche/Zielgruppe": analysis.business,
       "Erkanntes Ziel": analysis.goal,
-      "Fehlende Informationen": analysis.missing.join(", ") || "keine wichtigen Luecken",
+      "Fehlende Informationen": analysis.missing.join(", ") || "keine wichtigen Lücken",
       "Interne Notiz": analysis.internalNote,
-      "Antwortentwurf": analysis.replyDraft,
-      lead_score: analysis.score,
-      lead_status: analysis.status,
-      lead_priority: analysis.priority,
-      lead_next_action: analysis.nextAction,
-      lead_follow_up_date: analysis.followUpDate,
-      lead_project_type: analysis.projectType,
-      lead_missing_info: analysis.missing.join(", ") || "keine wichtigen Luecken",
-      internal_note: analysis.internalNote,
-      suggested_reply: analysis.replyDraft
+      "Antwortentwurf": analysis.replyDraft
     };
 
     return res.status(200).json({ ok: true, analysis, formspreePayload });
