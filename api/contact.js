@@ -205,12 +205,19 @@ ${lead.replyDraft}`;
 function buildReplyPageLink(req, email, name, replyDraft) {
   const proto = req.headers["x-forwarded-proto"] || "https";
   const host = req.headers.host || "ee-digital.de";
-  const subjectName = name ? ` an ${name}` : "";
-  const subject = `Ihre Anfrage bei E&E Digital${subjectName}`;
+  const subject = "Ihre Anfrage zur Web-Entwicklung bei E&E Digital";
   const params = new URLSearchParams({
     to: email,
     subject,
-    body: replyDraft
+    body: replyDraft,
+    name,
+    score: "",
+    status: "",
+    priority: "",
+    action: "",
+    project: "",
+    followup: "",
+    message: ""
   });
   return `${proto}://${host}/api/reply?${params.toString()}`;
 }
@@ -233,6 +240,14 @@ module.exports = async function handler(req, res) {
 
     const analysis = buildAnalysis(payload);
     const replyLink = buildReplyPageLink(req, email, name, analysis.replyDraft);
+    const enrichedReplyLink = new URL(replyLink);
+    enrichedReplyLink.searchParams.set("score", String(analysis.score));
+    enrichedReplyLink.searchParams.set("status", analysis.status);
+    enrichedReplyLink.searchParams.set("priority", analysis.priority);
+    enrichedReplyLink.searchParams.set("action", analysis.nextAction);
+    enrichedReplyLink.searchParams.set("project", analysis.projectType);
+    enrichedReplyLink.searchParams.set("followup", analysis.followUpDate);
+    enrichedReplyLink.searchParams.set("message", message);
     const formspreePayload = {
       ...payload,
       "Lead Score": analysis.score,
@@ -244,7 +259,7 @@ module.exports = async function handler(req, res) {
       "Branche/Zielgruppe": analysis.business,
       "Erkanntes Ziel": analysis.goal,
       "Fehlende Informationen": analysis.missing.join(", ") || "keine wichtigen Lücken",
-      "Antwortseite öffnen": replyLink,
+      "Antwortseite öffnen": enrichedReplyLink.toString(),
       "Interne Notiz": analysis.internalNote,
       "Antwortentwurf": analysis.replyDraft
     };
