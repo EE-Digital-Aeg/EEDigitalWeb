@@ -89,7 +89,14 @@ if (form) form.addEventListener('submit', async (e) => {
       })
     });
 
-    if (res.ok) {
+    const leadResult = res.ok ? await res.json() : null;
+    const formspreeRes = leadResult?.ok ? await fetch('https://formspree.io/f/xeeropao', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(leadResult.formspreePayload)
+    }) : null;
+
+    if (res.ok && formspreeRes?.ok) {
       form.reset();
       formSuccess.classList.add('show');
       setTimeout(() => formSuccess.classList.remove('show'), 6000);

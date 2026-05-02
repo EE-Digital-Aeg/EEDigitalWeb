@@ -1,5 +1,3 @@
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xeeropao";
-
 function includesAny(text, words) {
   const lower = String(text || "").toLowerCase();
   return words.some((word) => lower.includes(word));
@@ -164,7 +162,7 @@ module.exports = async function handler(req, res) {
     }
 
     const analysis = buildAnalysis(payload);
-    const enrichedPayload = {
+    const formspreePayload = {
       ...payload,
       lead_score: analysis.score,
       lead_status: analysis.status,
@@ -177,17 +175,7 @@ module.exports = async function handler(req, res) {
       suggested_reply: analysis.replyDraft
     };
 
-    const forwardRes = await fetch(FORMSPREE_ENDPOINT, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify(enrichedPayload)
-    });
-
-    if (!forwardRes.ok) {
-      return res.status(502).json({ ok: false, error: "Could not forward the form submission." });
-    }
-
-    return res.status(200).json({ ok: true, analysis });
+    return res.status(200).json({ ok: true, analysis, formspreePayload });
   } catch (error) {
     return res.status(500).json({ ok: false, error: "Unexpected contact form error." });
   }
