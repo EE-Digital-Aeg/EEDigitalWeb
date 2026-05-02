@@ -202,6 +202,12 @@ Empfohlene Antwort:
 ${lead.replyDraft}`;
 }
 
+function buildReplyLink(email, name, replyDraft) {
+  const subjectName = name ? ` an ${name}` : "";
+  const subject = `Ihre Anfrage bei E&E Digital${subjectName}`;
+  return `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(replyDraft)}`;
+}
+
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
@@ -219,6 +225,7 @@ module.exports = async function handler(req, res) {
     }
 
     const analysis = buildAnalysis(payload);
+    const replyLink = buildReplyLink(email, name, analysis.replyDraft);
     const formspreePayload = {
       ...payload,
       "Lead Score": analysis.score,
@@ -230,6 +237,7 @@ module.exports = async function handler(req, res) {
       "Branche/Zielgruppe": analysis.business,
       "Erkanntes Ziel": analysis.goal,
       "Fehlende Informationen": analysis.missing.join(", ") || "keine wichtigen Lücken",
+      "Antwort direkt öffnen": replyLink,
       "Interne Notiz": analysis.internalNote,
       "Antwortentwurf": analysis.replyDraft
     };
