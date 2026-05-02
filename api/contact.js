@@ -202,10 +202,17 @@ Empfohlene Antwort:
 ${lead.replyDraft}`;
 }
 
-function buildReplyLink(email, name, replyDraft) {
+function buildReplyPageLink(req, email, name, replyDraft) {
+  const proto = req.headers["x-forwarded-proto"] || "https";
+  const host = req.headers.host || "ee-digital.de";
   const subjectName = name ? ` an ${name}` : "";
   const subject = `Ihre Anfrage bei E&E Digital${subjectName}`;
-  return `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(replyDraft)}`;
+  const params = new URLSearchParams({
+    to: email,
+    subject,
+    body: replyDraft
+  });
+  return `${proto}://${host}/api/reply?${params.toString()}`;
 }
 
 module.exports = async function handler(req, res) {
@@ -225,7 +232,7 @@ module.exports = async function handler(req, res) {
     }
 
     const analysis = buildAnalysis(payload);
-    const replyLink = buildReplyLink(email, name, analysis.replyDraft);
+    const replyLink = buildReplyPageLink(req, email, name, analysis.replyDraft);
     const formspreePayload = {
       ...payload,
       "Lead Score": analysis.score,
@@ -237,7 +244,7 @@ module.exports = async function handler(req, res) {
       "Branche/Zielgruppe": analysis.business,
       "Erkanntes Ziel": analysis.goal,
       "Fehlende Informationen": analysis.missing.join(", ") || "keine wichtigen Lücken",
-      "Antwort direkt öffnen": replyLink,
+      "Antwortseite öffnen": replyLink,
       "Interne Notiz": analysis.internalNote,
       "Antwortentwurf": analysis.replyDraft
     };
