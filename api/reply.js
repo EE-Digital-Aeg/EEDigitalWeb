@@ -28,6 +28,7 @@ module.exports = async function handler(req, res) {
   const project = String(req.query.project || "-");
   const followup = String(req.query.followup || "-");
   const message = String(req.query.message || "");
+  const sendMode = String(req.query.send || "") === "1";
   const mailto = buildMailto(to, subject, body);
   const doneKey = `ee-reply-done:${to}:${subject}`;
 
@@ -201,7 +202,7 @@ module.exports = async function handler(req, res) {
     <div class="layout">
       <section class="card">
         <h1>Antwortentwurf</h1>
-        <p class="hint">Bearbeiten, prüfen und dann als Mail-Entwurf öffnen.</p>
+        <p class="hint">${sendMode ? "Direkt senden ist vorbereitet. Bitte Entwurf prüfen und bewusst bestätigen." : "Bearbeiten, prüfen und dann als Mail-Entwurf öffnen oder direkt senden."}</p>
         <div class="meta">
           <span>An</span><strong id="to">${escapeHtml(to)}</strong>
           <span>Betreff</span><strong id="subject">${escapeHtml(subject)}</strong>
@@ -209,6 +210,7 @@ module.exports = async function handler(req, res) {
         <textarea id="draft">${escapeHtml(body)}</textarea>
         <div class="actions">
           <button class="primary" id="openMail">Mail-Entwurf öffnen</button>
+          <button id="sendNow">Direkt senden</button>
           <button id="copyDraft">Antwort kopieren</button>
           <button id="copyAll">Alles kopieren</button>
           <button id="markDone">Als erledigt markieren</button>
@@ -259,6 +261,24 @@ module.exports = async function handler(req, res) {
 
     document.querySelector("#openMail").addEventListener("click", () => {
       window.location.href = mailto();
+    });
+    document.querySelector("#sendNow").addEventListener("click", async () => {
+      const ok = window.confirm("Diese Antwort jetzt an " + to + " senden?");
+      if (!ok) return;
+      statusText.textContent = "Sende Antwort...";
+      const response = await fetch("/api/send-reply", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ to, subject, body: currentDraft() })
+      });
+      const result = await response.json().catch(() => ({}));
+      if (response.ok && result.ok) {
+        localStorage.setItem(doneKey, "1");
+        refreshDoneState();
+        statusText.textContent = "Antwort wurde gesendet und als erledigt markiert.";
+      } else {
+        statusText.textContent = result.error || "Antwort konnte nicht gesendet werden. API-Key oder Absender prüfen.";
+      }
     });
     document.querySelector("#copyDraft").addEventListener("click", async () => {
       await navigator.clipboard.writeText(currentDraft());

@@ -248,6 +248,8 @@ module.exports = async function handler(req, res) {
     enrichedReplyLink.searchParams.set("project", analysis.projectType);
     enrichedReplyLink.searchParams.set("followup", analysis.followUpDate);
     enrichedReplyLink.searchParams.set("message", message);
+    const directSendLink = new URL(enrichedReplyLink.toString());
+    directSendLink.searchParams.set("send", "1");
     const formspreePayload = {
       ...payload,
       "Lead Score": analysis.score,
@@ -260,6 +262,7 @@ module.exports = async function handler(req, res) {
       "Erkanntes Ziel": analysis.goal,
       "Fehlende Informationen": analysis.missing.join(", ") || "keine wichtigen Lücken",
       "Antwortseite öffnen": enrichedReplyLink.toString(),
+      "Direkt senden vorbereiten": directSendLink.toString(),
       "Interne Notiz": analysis.internalNote,
       "Antwortentwurf": analysis.replyDraft
     };
